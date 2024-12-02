@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Works</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(0, 0, 0, 0.267);
+            color: #000000;
+        }
+        header {
+            background-color: #020108;
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            padding: 10px;
+            background-color: #eee;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #020108;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #020108;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Layout for image gallery */
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 50px; /* Space between columns */
+            padding: 20px;
+        }
+        .image-column {
+            display: flex;
+            flex-direction: column; /* Stack images vertically */
+            align-items: center; /* Center images horizontally */
+            gap: 20px; /* Space between images in each column */
+        }
+        .image-column img {
+            display: block;
+            max-width: 100%;
+        }
+        /* Specific sizes for images */
+        .small-img {
+            width: 200px;
+        }
+        .large-img {
+            width: 400px; /* Larger images for Samurai, Skull, and the second column */
+        }
+        .medium-img {
+            width: 300px; /* Slightly larger images for Astro and Front */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Jay Works</h1>
+    </header>
+
+    <div class="image-gallery">
+        <!-- First column -->
+        <div class="image-column">
+            <img src="Courage.jpg" alt="Skull image" class="medium-img">
+        </div>
+        <div class="image-column">
+            <img src="Skull.jpg" alt="Skull image" class="medium-img">
+        </div>
+        <div class="image-column">
+            <img src="Samurai.jpg" alt="Samurai image" class="medium-img">
+          
+        </div>
+
+        <!-- Second column -->
+        <div class="image-column">
+            <img src="Adventure.png" alt="Adventure image" class="large-img">
+            <img src="MindsoleShirt.png" alt="MindsoleShirt image" class="large-img">
+        </div>
+
+        <!-- Third column -->
+        <div class="image-column">
+            <img src="ID_Kitchen.jpg" alt="Kitchen design" class="large-img">
+            <img src="ID_Cabinet.jpg" alt="Cabinet design" class="large-img">
+        </div>
+        <div class="image-column">
+            <img src="ID_Closet.jpg" alt="Closet design" class="large-img">
+            <img src="ID_Kitchen2.jpg" alt="Closet design" class="large-img">
+        </div>
+    </div>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Jay, a passionate graphic artist with a keen eye for detail and a love for visual storytelling. I specialize in creating compelling designs that connect with audiences, whether through digital illustrations, branding, or multimedia projects.
+                
+                Art has always been my way of expressing ideas and bringing visions to life. When I'm not designing, I enjoy experimenting with new techniques, exploring different art styles, and finding inspiration in everyday life.
+                
+                I believe that great design is not just about aesthetics but also about crafting meaningful experiences. Let's collaborate and make something beautiful together!</p>
+        </section>
+
+        <section id="contact">
+            <h2>Email Me</h2>
+            <p>Email: <strong>coralests@gmail.com</strong></p> <!-- Email displayed here -->
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 Jay Works. All rights reserved.
+    </footer>
+</body>
+</html>
